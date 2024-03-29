@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 var userIsAuthorised = false;
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
+//custom Middleware
 function passwordCheck(req, res, next) {
   const password = req.body["password"];
   if (password === "ILoveProgramming") {
